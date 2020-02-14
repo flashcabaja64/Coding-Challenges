@@ -23,4 +23,13 @@ function stairCase(int) {
   return output;
 }
 
-console.log(stairCase(6))
+function stairCase1(int) {
+  for(let i=0; i < int; i++) {
+    let spaces = new Array(int - i).join("");
+    let hashes = new Array(2 + i).join("#")
+    console.log(spaces + hashes)
+  }
+}
+
+//console.log(stairCase(6))
+stairCase1(6)
