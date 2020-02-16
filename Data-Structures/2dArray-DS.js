@@ -15,9 +15,7 @@ Complete the function hourglassSum in the editor below. It should return an inte
 hourglassSum has the following parameter(s):
 
 arr: an array of integers
-*/
 
-/*
 Top Hourglass: arr[i][j] + arr[i][j+1] + arr[i][j+2]
 
 Middle Hourglass: arr[i+1][j+1]
