@@ -1,5 +1,5 @@
 /*
-Given a  6 x 6 2D Array, arr:
+Given a 6 x 6 2D Array, arr:
 
 1 1 1 0 0 0
 0 1 0 0 0 0
@@ -29,7 +29,7 @@ Bottom Hourglass: arr[i+2][j] + arr[i+2][j+1] + arr[i+2][j+2]
 function hourglassSum(arr) {
   let row = 3; // max length to iterate in the 2D array row
   let column = 3; // max iterative length in the 2D array column
-  let total = -63;
+  let total = -63; // max total for negative sum
 
   for(let y = 0; y <= row; y++) {
     for(let x = 0; x <= column; x++) {
