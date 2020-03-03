@@ -11,7 +11,8 @@ var mostCommonWord = function(paragraph, banned) {
 
     words.forEach(w => {
       let word = w.toLowerCase()
-      if(!banned.includes(word)) {
+      //negates punctuation with word.length
+      if(word.length && !banned.includes(word)) {
         obj[word] = obj[word] == undefined ? 1 : obj[word]+1 
       }
     })
